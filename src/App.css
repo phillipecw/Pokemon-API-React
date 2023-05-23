@@ -1,0 +1,160 @@
+body {
+  background-color: #ededed;
+}
+
+.pokemon-app {
+  padding: 2rem;
+}
+
+.pokemon-app h1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.pokemon-searchbar {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.pokemon-table {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+}
+
+.pokemon-table .pokemon-table__header,
+.pokemon-table .pokemon-table__items .item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pokemon-table .pokemon-table__header > div,
+.pokemon-table .pokemon-table__items .item > div {
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  flex: 1;
+}
+
+.pokemon-table .pokemon-table__items .item > div {
+   text-align: left;
+}
+
+.pokemon-table .pokemon-table__items .item > div > span {
+  display: none;
+}
+
+.pokemon-table .pokemon-table__items .item > div.image,
+.pokemon-table .pokemon-table__items .item > div.actions {
+  text-align: center;
+}
+
+.pokemon-table .pokemon-table__items .item > div > img {
+  height: 2rem;
+  margin: 0 auto;
+}
+
+.pokemon-form {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.pokemon-form h2 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.pokemon-form__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pokemon-form__row > div {
+  padding: 1rem;
+}
+
+.pokemon-form__row > div > div {
+  padding: 0.5rem;
+}
+
+.pokemon-form__row > div > div > label {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.pokemon-input {
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.2rem;
+}
+
+.pokemon-btn {
+  background-color: #6458f6;
+  color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid #6458f6;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.pokemon-btn:disabled,
+.pokemon-btn[disabled]{
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.pokemon-form .pokemon-btn {
+  margin: 0 0.5rem;
+}
+
+.pokemon-icon {
+  padding-left: 2rem;
+  background-position: 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.pokemon-icon--search {
+  background-image: url(./assets/search.svg);
+}
+
+.pokemon-icon--plus {
+  background-image: url(./assets/plus.svg);
+}
+
+.pokemon-icon--edit {
+  background-image: url(./assets/edit.svg);
+}
+
+.pokemon-icon--trash {
+  background-image: url(./assets/trash.svg);
+}
+
+.pokemon-icon--save {
+  background-image: url(./assets/save.svg);
+}
+
+.pokemon-icon--cancel {
+  background-image: url(./assets/cancel.svg);
+}
+
+.pokemon-btn--icon {
+  background-color: transparent;
+  border: 0;
+  height: 1rem;
+  background-position: center center;
+  cursor: pointer;
+}
