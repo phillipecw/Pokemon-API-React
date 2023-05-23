@@ -34,6 +34,17 @@ body {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 640px) {
+  .pokemon-table .pokemon-table__header {
+    display: none;
+  }
+  .pokemon-table .pokemon-table__items .item {
+    display: block;
+    border: 1px solid #dcdcdc;
+    padding: 1rem;
+  }
+}
+
 .pokemon-table .pokemon-table__header > div,
 .pokemon-table .pokemon-table__items .item > div {
   padding: 0.5rem;
@@ -42,12 +53,32 @@ body {
   flex: 1;
 }
 
+@media screen and (max-width: 640px) {
+  .pokemon-table .pokemon-table__items .item > div {
+    border: 0;
+  }
+}
+
 .pokemon-table .pokemon-table__items .item > div {
-   text-align: left;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+  .pokemon-table .pokemon-table__items .item > div {
+    text-align: center;
+  }
 }
 
 .pokemon-table .pokemon-table__items .item > div > span {
   display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .pokemon-table .pokemon-table__items .item > div > span {
+    display: inline-block;
+    padding-right: 1rem;
+  }
 }
 
 .pokemon-table .pokemon-table__items .item > div.image,
@@ -58,6 +89,12 @@ body {
 .pokemon-table .pokemon-table__items .item > div > img {
   height: 2rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .pokemon-table .pokemon-table__items .item > div > img {
+    height: 5rem;
+  }
 }
 
 .pokemon-form {
@@ -111,7 +148,7 @@ body {
 }
 
 .pokemon-btn:disabled,
-.pokemon-btn[disabled]{
+.pokemon-btn[disabled] {
   opacity: 0.5;
   cursor: no-drop;
 }
